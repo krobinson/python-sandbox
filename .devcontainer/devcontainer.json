@@ -12,12 +12,19 @@
 			"enableNonRootDocker": "true",
 			"moby": "false"
 		},
-		"ghcr.io/devcontainers-contrib/features/elixir-asdf:2": {
-			"elixirVersion": "1.17.1-otp-27",
-			"erlangVersion": "27.0"
-		},
+		"ghcr.io/devcontainers/features/python:1": {
+			"version": "3.12.4",
+			"installJupyterlab": "true"
+		}
 		"ghcr.io/devcontainers-contrib/features/apt-packages:1": {
-			"packages": "postgresql-client, npm"
+			"packages": "postgresql-client, npm, pipx"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-toolsai.jupyter"
+			]
 		}
 	}
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
